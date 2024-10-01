@@ -24,7 +24,7 @@ const __dirname=path.dirname(__filename)
 //middleware
 
 app.use(cors({
-  origin: 'https://your-app-name.onrender.com',
+  origin: 'https://ecommerce-rqu3.onrender.com',
   credentials: true
 }));
 app.use(morgan('dev'));
