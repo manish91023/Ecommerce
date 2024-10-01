@@ -22,7 +22,11 @@ connectDb();
 const __filename=fileURLToPath(import.meta.url)
 const __dirname=path.dirname(__filename)
 //middleware
-app.use(cors())
+
+app.use(cors({
+  origin: 'https://your-app-name.onrender.com',
+  credentials: true
+}));
 app.use(morgan('dev'));
 app.use(express.json())
 app.use(express.static(path.join(__dirname,'./client/build')))
